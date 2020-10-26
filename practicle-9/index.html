@@ -1,0 +1,1509 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Practicle-9</title>
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+    }
+
+    @media(min-width:1520px) {
+      #container {
+        width: 100%;
+        margin: 0px auto;
+        padding: 15px;
+        position: relative;
+      }
+
+      ul {
+        list-style: none;
+        width: 100%;
+        background-color: lightgrey;
+        display: flex;
+        justify-content: space-evenly;
+        position: fixed;
+        top: 0;
+
+      }
+
+      li {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+      }
+
+      li a {
+        text-decoration: none;
+        padding: 15px 20px;
+        display: block;
+        color: white;
+      }
+
+      a:hover {
+        background-color: white;
+        color: black;
+      }
+
+      #back {
+        margin-top: 30px;
+
+        height: 1000px;
+        background-image: url(images/lapi.jpg);
+      }
+
+      #back h1 {
+        color: white;
+        margin: 50px;
+
+      }
+
+      #team {
+
+        height: 400px;
+        margin-top: 30px;
+        width: 100%;
+      }
+
+      #team>h1 {
+        text-align: center;
+        color: black;
+      }
+
+      #lpc {
+
+        float: left;
+        width: 643px;
+        height: 360px;
+        margin-left: 100px;
+      }
+
+      #rpc {
+
+        float: right;
+        width: 643px;
+        height: 360px;
+        margin-right: 100px;
+      }
+
+      #team img {
+        border-radius: 50%;
+      }
+
+      #llc {
+        float: left;
+        margin-top: 100px;
+
+      }
+
+      #lrc {
+        float: right;
+        margin-right: 80px;
+        margin-top: 100px;
+
+
+      }
+
+      #rlc {
+        float: left;
+        margin-left: 30px;
+        margin-top: 100px;
+
+      }
+
+      #rrc {
+        float: right;
+        margin-top: 100px;
+        margin-right: 20px;
+
+      }
+
+      #about {
+
+        height: 500px;
+        margin-top: 30px;
+        width: 100%;
+
+      }
+
+      #about>h1 {
+        text-align: center;
+        margin-bottom: 10px;
+      }
+
+      #lhs {
+
+        float: left;
+        width: 49%;
+        height: 450px;
+        background-color: lightgrey;
+
+      }
+
+      #rhs {
+
+        float: right;
+        width: 49%;
+        height: 450px;
+
+      }
+
+      h2 {
+        color: white;
+        padding: 10px;
+      }
+
+      #lhs p {
+        color: white;
+        padding: 10px;
+      }
+
+      #Article-1 {
+        background-image: url(images/p1.jpg);
+        height: 140px;
+        width: 100%;
+
+
+
+      }
+
+      #Article-2 {
+        background-image: url(images/p2.jpeg);
+        height: 140px;
+        width: 100%;
+        margin-top: 20px;
+
+
+      }
+
+      #Article-3 {
+        background-image: url(images/p3.jpg);
+        height: 130px;
+        width: 100%;
+        margin-top: 20px;
+
+      }
+
+      #rhs h1 {
+        text-align: center;
+      }
+
+      img {
+        width: 90%;
+        margin: 5%;
+        border-radius: 10%;
+      }
+
+      #TECHNOLOGIES {
+
+        height: 400px;
+        margin-top: 30px;
+        width: 100%;
+      }
+
+      #TECHNOLOGIES>h1 {
+        text-align: center;
+        margin-bottom: 10px;
+      }
+
+      #lh {
+
+        float: left;
+        width: 643px;
+        height: 350px;
+        margin-left: 100px;
+      }
+
+      #rh {
+
+        float: right;
+        width: 643px;
+        height: 350px;
+        margin-right: 100px;
+      }
+
+      #llh {
+        background-color: lightgrey;
+
+        width: 250px;
+        border: 2px solid white;
+        border-radius: 2%;
+        margin-top: 20Px;
+        margin-left: 30px;
+
+        float: left;
+
+
+      }
+
+      #lrh {
+        background-color: lightgrey;
+
+        width: 250px;
+        border: 1px solid white;
+        border-radius: 2%;
+        margin-top: 20Px;
+        margin-right: 50px;
+
+        float: right;
+      }
+
+      #lrh img {
+        width: 60%;
+        margin-left: 20%;
+        border-radius: 10%;
+
+      }
+
+      #rlh {
+        background-color: lightgrey;
+
+        width: 250px;
+        border: 1px solid white;
+        border-radius: 2%;
+        margin-left: 40px;
+        margin-top: 20Px;
+
+        float: left;
+      }
+
+      #rrh {
+        background-color: lightgrey;
+
+        width: 250px;
+        border: 1px solid white;
+        border-radius: 2%;
+
+        float: left;
+        margin-left: 90px;
+        margin-top: 20Px;
+      }
+
+      #rrh>img {
+        width: 60%;
+        margin-left: 20%;
+        border-radius: 10%;
+
+      }
+
+      #TECHNOLOGIES a {
+        background-color: red;
+        color: white;
+
+        margin-left: 10px;
+        text-decoration: none;
+        border-radius: 5px;
+        text-align: center;
+        padding-left: 80px;
+        padding-right: 80px;
+
+
+
+
+
+      }
+
+      #TECHNOLOGIES p {
+        margin-left: 10px;
+
+      }
+
+
+
+      #TECHNOLOGIES a.specialeffects:hover {
+        color: black;
+        background-color: blue;
+        width: 100%;
+      }
+
+      #contact {
+
+        width: 100%;
+        height: 170px;
+      }
+
+      #contact h1 {
+        text-align: center;
+      }
+
+      #page {
+        margin-top: 25px;
+
+        height: 100px;
+        background-color: lightpink;
+      }
+
+      #forcontact {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+      }
+
+      #page p {
+        text-align: center;
+        margin-top: 10px;
+
+      }
+
+
+    }
+
+    @media (min-width:800px) and (max-width:1519px) {
+      #container {
+        width: 100%;
+        margin: 0px auto;
+        padding: 15px;
+        position: relative;
+      }
+
+      ul {
+        list-style: none;
+        width: 100%;
+        background-color: lightgrey;
+        display: flex;
+        justify-content: space-evenly;
+        position: fixed;
+        top: 0;
+
+      }
+
+      li {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+      }
+
+      li a {
+        text-decoration: none;
+        padding: 15px 20px;
+        display: block;
+        color: white;
+      }
+
+      a:hover {
+        background-color: white;
+        color: black;
+      }
+
+      #back {
+        margin-top: 30px;
+
+        height: 1000px;
+        background-image: url(images/lapi.jpg);
+      }
+
+      #back h1 {
+        color: white;
+        margin: 50px;
+
+      }
+
+      #team {
+
+        height: 400px;
+        margin-top: 30px;
+        width: 100%;
+      }
+
+      #team>h1 {
+        text-align: center;
+        color: black;
+      }
+
+      #lpc {
+
+
+        width: 643px;
+        height: 360px;
+        margin-left: 200px;
+      }
+
+      #rpc {
+
+
+        width: 643px;
+        height: 360px;
+        margin-left: 200px;
+      }
+
+      #team img {
+        border-radius: 50%;
+      }
+
+      #llc {
+        float: left;
+        margin-top: 100px;
+
+      }
+
+      #lrc {
+        float: right;
+        margin-right: 80px;
+        margin-top: 100px;
+
+
+      }
+
+      #rlc {
+        float: left;
+        margin-left: 30px;
+        margin-top: 100px;
+
+      }
+
+      #rrc {
+        float: right;
+        margin-top: 100px;
+        margin-right: 60px;
+
+      }
+
+      #about {
+
+        height: 500px;
+        margin-top: 350px;
+        width: 100%;
+
+      }
+
+      #about>h1 {
+        text-align: center;
+        margin-bottom: 10px;
+      }
+
+      #lhs {
+
+        float: left;
+        width: 49%;
+        height: 450px;
+        background-color: lightgrey;
+
+      }
+
+      #rhs {
+
+        float: right;
+        width: 49%;
+        height: 450px;
+
+      }
+
+      h2 {
+        color: white;
+        padding: 10px;
+      }
+
+      #lhs p {
+        color: white;
+        padding: 10px;
+      }
+
+      #Article-1 {
+        background-image: url(images/p1.jpg);
+        height: 140px;
+        width: 100%;
+
+
+
+      }
+
+      #Article-2 {
+        background-image: url(images/p2.jpeg);
+        height: 140px;
+        width: 100%;
+        margin-top: 20px;
+
+
+      }
+
+      #Article-3 {
+        background-image: url(images/p3.jpg);
+        height: 130px;
+        width: 100%;
+        margin-top: 20px;
+
+      }
+
+      #rhs h1 {
+        text-align: center;
+      }
+
+      img {
+        width: 90%;
+        margin: 5%;
+        border-radius: 10%;
+      }
+
+      #TECHNOLOGIES {
+
+        height: 400px;
+        margin-top: 30px;
+        width: 100%;
+      }
+
+      #TECHNOLOGIES>h1 {
+        text-align: center;
+        margin-bottom: 10px;
+      }
+
+      #lh {
+
+        width: 643px;
+        height: 350px;
+        margin-left: 200px;
+      }
+
+      #rh {
+
+        width: 643px;
+        height: 350px;
+        margin-left: 200px;
+      }
+
+      #llh {
+        background-color: lightgrey;
+
+        width: 250px;
+        border: 2px solid white;
+        border-radius: 2%;
+        margin-top: 20Px;
+        margin-left: 30px;
+
+        float: left;
+
+
+      }
+
+      #lrh {
+        background-color: lightgrey;
+
+        width: 250px;
+        border: 1px solid white;
+        border-radius: 2%;
+        margin-top: 20Px;
+
+        margin-left: 60px;
+
+        float: right;
+      }
+
+      #lrh img {
+        width: 60%;
+        margin-left: 20%;
+        border-radius: 10%;
+
+      }
+
+      #rlh {
+        background-color: lightgrey;
+
+        width: 250px;
+        border: 1px solid white;
+        border-radius: 2%;
+        margin-left: 40px;
+        margin-top: 20Px;
+
+        float: left;
+      }
+
+      #rrh {
+        background-color: lightgrey;
+
+        width: 250px;
+        border: 1px solid white;
+        border-radius: 2%;
+
+        float: left;
+        margin-left: 100px;
+        margin-top: 20Px;
+      }
+
+      #rrh>img {
+        width: 60%;
+        margin-left: 20%;
+        border-radius: 10%;
+
+      }
+
+      #TECHNOLOGIES a {
+        background-color: red;
+        color: white;
+
+        margin-left: 10px;
+        text-decoration: none;
+        border-radius: 5px;
+        text-align: center;
+        padding-left: 80px;
+        padding-right: 80px;
+
+
+
+
+
+      }
+
+      #TECHNOLOGIES p {
+        margin-left: 10px;
+
+      }
+
+
+
+      #TECHNOLOGIES a.specialeffects:hover {
+        color: black;
+        background-color: blue;
+        width: 100%;
+      }
+
+      #contact {
+
+        width: 100%;
+        height: 170px;
+        margin-top: 350px;
+      }
+
+      #contact h1 {
+        text-align: center;
+      }
+
+      #page {
+        margin-top: 25px;
+
+        height: 100px;
+        background-color: lightpink;
+      }
+
+      #forcontact {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+      }
+
+      #page p {
+        text-align: center;
+        margin-top: 10px;
+
+      }
+
+
+
+    }
+    @media (min-width: 400px) and (max-width: 799px)
+    {
+        #container {
+        width: 100%;
+        margin: 0px auto;
+        padding: 15px;
+        position: relative;
+      }
+
+      ul {
+        list-style: none;
+        width: 100%;
+        background-color: lightgrey;
+        display: flex;
+        justify-content: space-evenly;
+        position: fixed;
+        top: 0;
+
+      }
+
+      li {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+      }
+
+      li a {
+        text-decoration: none;
+        padding: 15px 20px;
+        display: block;
+        color: white;
+      }
+
+      a:hover {
+        background-color: white;
+        color: black;
+      }
+
+      #back {
+        margin-top: 30px;
+
+        height: 1000px;
+        background-image: url(images/lapi.jpg);
+      }
+
+      #back h1 {
+        color: white;
+        margin: 50px;
+
+      }
+
+      #team {
+
+        height: 400px;
+        margin-top: 30px;
+        width: 100%;
+      }
+
+      #team>h1 {
+        text-align: center;
+        color: black;
+      }
+
+      #lpc {
+
+
+        width: 643px;
+        height: 360px;
+        margin-left: 100px;
+      }
+
+      #rpc {
+
+
+        width: 643px;
+        height: 360px;
+        margin-left: 100px;
+      }
+
+      #team img {
+        border-radius: 50%;
+      }
+
+      #llc {
+        float: left;
+        margin-top: 100px;
+
+      }
+
+      #lrc {
+        float: right;
+        margin-right: 80px;
+        margin-top: 100px;
+
+
+      }
+
+      #rlc {
+        float: left;
+      
+        margin-top: 100px;
+
+      }
+
+      #rrc {
+        float: right;
+        margin-top: 100px;
+        margin-right: 80px;
+
+      }
+
+      #about {
+
+        height: 500px;
+        margin-top: 350px;
+        width: 100%;
+
+      }
+
+      #about>h1 {
+        text-align: center;
+        margin-bottom: 10px;
+      }
+
+      #lhs {
+
+      
+        width: 100%;
+        height: 450px;
+        background-color: lightgrey;
+
+      }
+
+      #rhs {
+
+        
+        width: 100%;
+        height: 450px;
+
+      }
+
+      h2 {
+        color: white;
+        padding: 10px;
+      }
+
+      #lhs p {
+        color: white;
+        padding: 10px;
+      }
+
+      #Article-1 {
+        background-image: url(images/p1.jpg);
+        height: 140px;
+        width: 100%;
+        margin-top: 20px;
+
+
+
+      }
+
+      #Article-2 {
+        background-image: url(images/p2.jpeg);
+        height: 140px;
+        width: 100%;
+        margin-top: 20px;
+
+
+      }
+
+      #Article-3 {
+        background-image: url(images/p3.jpg);
+        height: 130px;
+        width: 100%;
+        margin-top: 20px;
+
+      }
+
+      #rhs h1 {
+        text-align: center;
+      }
+
+      img {
+        width: 90%;
+        margin: 5%;
+        border-radius: 10%;
+      }
+
+      #TECHNOLOGIES {
+
+        height: 400px;
+        margin-top: 480px;
+        width: 100%;
+      }
+
+      #TECHNOLOGIES>h1 {
+        text-align: center;
+        margin-bottom: 10px;
+      }
+
+      #lh {
+
+        width: 643px;
+        height: 350px;
+        margin-left: 30px;
+      }
+
+      #rh {
+
+        width: 643px;
+        height: 350px;
+        margin-left: 30px;
+      }
+
+      #llh {
+        background-color: lightgrey;
+
+        width: 250px;
+        border: 2px solid white;
+        border-radius: 2%;
+        margin-top: 20Px;
+        margin-left: 30px;
+
+        float: left;
+
+
+      }
+
+      #lrh {
+        background-color: lightgrey;
+
+        width: 250px;
+        border: 1px solid white;
+        border-radius: 2%;
+        margin-top: 20Px;
+
+        margin-left: 60px;
+
+        float: right;
+      }
+
+      #lrh img {
+        width: 60%;
+        margin-left: 20%;
+        border-radius: 10%;
+
+      }
+
+      #rlh {
+        background-color: lightgrey;
+
+        width: 250px;
+        border: 1px solid white;
+        border-radius: 2%;
+        margin-left: 40px;
+        margin-top: 20Px;
+
+        float: left;
+      }
+
+      #rrh {
+        background-color: lightgrey;
+
+        width: 250px;
+        border: 1px solid white;
+        border-radius: 2%;
+
+        float: left;
+        margin-left: 100px;
+        margin-top: 20Px;
+      }
+
+      #rrh>img {
+        width: 60%;
+        margin-left: 20%;
+        border-radius: 10%;
+
+      }
+
+      #TECHNOLOGIES a {
+        background-color: red;
+        color: white;
+
+        margin-left: 10px;
+        text-decoration: none;
+        border-radius: 5px;
+        text-align: center;
+        padding-left: 80px;
+        padding-right: 80px;
+
+
+
+
+
+      }
+
+      #TECHNOLOGIES p {
+        margin-left: 10px;
+
+      }
+
+
+
+      #TECHNOLOGIES a.specialeffects:hover {
+        color: black;
+        background-color: blue;
+        width: 100%;
+      }
+
+      #contact {
+
+        width: 100%;
+        height: 170px;
+        margin-top: 350px;
+      }
+
+      #contact h1 {
+        text-align: center;
+      }
+
+      #page {
+        margin-top: 25px;
+
+        height: 100px;
+        background-color: lightpink;
+      }
+
+      #forcontact {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+      }
+
+      #page p {
+        text-align: center;
+        margin-top: 10px;
+
+      }
+
+
+
+    }
+
+    @media(max-width:399px)
+    {
+        #container {
+        width: 100%;
+        margin: 0px auto;
+        padding: 0px;
+        /* position: relative; */
+      }
+
+      ul {
+        list-style: none;
+        width: 100%;
+        background-color: lightgrey;
+        display: flex;
+        justify-content: space-evenly;
+        position: fixed;
+        top: 0;
+
+      }
+
+      li {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+      }
+
+      li a {
+        text-decoration: none;
+        padding: 15px 20px;
+        display: block;
+        color: white;
+      }
+
+      a:hover {
+        background-color: white;
+        color: black;
+      }
+
+      #back {
+        margin-top: 30px;
+
+        height:1000px;
+        background-image: url(images/lapi.jpg);
+      }
+
+      #back h1 {
+        color: white;
+        margin: 50px;
+
+      }
+
+      #team {
+
+        height: 400px;
+        margin-top: 30px;
+        width: 100%;
+      }
+
+      #team>h1 {
+        text-align: center;
+        color: black;
+      }
+
+      #lpc {
+
+
+        width: 643px;
+        height: 360px;
+        margin-left: 100px;
+      }
+
+      #rpc {
+
+
+        width: 643px;
+        height: 360px;
+        margin-left: 100px;
+      }
+
+      #team img {
+        border-radius: 50%;
+      }
+
+      #llc {
+        float: left;
+        margin-top: 100px;
+
+      }
+
+      #lrc {
+        float: right;
+        margin-right: 80px;
+        margin-top: 100px;
+
+
+      }
+
+      #rlc {
+        float: left;
+      
+        margin-top: 100px;
+
+      }
+
+      #rrc {
+        float: right;
+        margin-top: 100px;
+        margin-right: 80px;
+
+      }
+
+      #about {
+
+        height: 500px;
+        margin-top: 350px;
+        width: 100%;
+
+      }
+
+      #about>h1 {
+        text-align: center;
+        margin-bottom: 10px;
+      }
+
+      #lhs {
+
+      
+        width: 100%;
+        height: 450px;
+        background-color: lightgrey;
+
+      }
+
+      #rhs {
+
+        
+        width: 100%;
+        height: 450px;
+
+      }
+
+      h2 {
+        color: white;
+        padding: 10px;
+      }
+
+      #lhs p {
+        color: white;
+        padding: 10px;
+      }
+
+      #Article-1 {
+        background-image: url(images/p1.jpg);
+        height: 140px;
+        width: 100%;
+        margin-top: 20px;
+
+
+
+      }
+
+      #Article-2 {
+        background-image: url(images/p2.jpeg);
+        height: 140px;
+        width: 100%;
+        margin-top: 20px;
+
+
+      }
+
+      #Article-3 {
+        background-image: url(images/p3.jpg);
+        height: 130px;
+        width: 100%;
+        margin-top: 20px;
+
+      }
+
+      #rhs h1 {
+        text-align: center;
+      }
+
+      img {
+        width: 90%;
+        margin: 5%;
+        border-radius: 10%;
+      }
+
+      #TECHNOLOGIES {
+
+        height: 400px;
+        margin-top: 480px;
+        width: 100%;
+      }
+
+      #TECHNOLOGIES>h1 {
+        text-align: center;
+        margin-bottom: 10px;
+      }
+
+      #lh {
+
+        width: 643px;
+        height: 350px;
+        margin-left: 30px;
+      }
+
+      #rh {
+
+        width: 643px;
+        height: 350px;
+        margin-left: 30px;
+      }
+
+      #llh {
+        background-color: lightgrey;
+
+        width: 250px;
+        border: 2px solid white;
+        border-radius: 2%;
+        margin-top: 20Px;
+        margin-left: 30px;
+
+        float: left;
+
+
+      }
+
+      #lrh {
+        background-color: lightgrey;
+
+        width: 250px;
+        border: 1px solid white;
+        border-radius: 2%;
+        margin-top: 20Px;
+
+        margin-left: 60px;
+
+        float: right;
+      }
+
+      #lrh img {
+        width: 60%;
+        margin-left: 20%;
+        border-radius: 10%;
+
+      }
+
+      #rlh {
+        background-color: lightgrey;
+
+        width: 250px;
+        border: 1px solid white;
+        border-radius: 2%;
+        margin-left: 40px;
+        margin-top: 20Px;
+
+        float: left;
+      }
+
+      #rrh {
+        background-color: lightgrey;
+
+        width: 250px;
+        border: 1px solid white;
+        border-radius: 2%;
+
+        float: left;
+        margin-left: 100px;
+        margin-top: 20Px;
+      }
+
+      #rrh>img {
+        width: 60%;
+        margin-left: 20%;
+        border-radius: 10%;
+
+      }
+
+      #TECHNOLOGIES a {
+        background-color: red;
+        color: white;
+
+        margin-left: 10px;
+        text-decoration: none;
+        border-radius: 5px;
+        text-align: center;
+        padding-left: 80px;
+        padding-right: 80px;
+
+
+
+
+
+      }
+
+      #TECHNOLOGIES p {
+        margin-left: 10px;
+
+      }
+
+
+
+      #TECHNOLOGIES a.specialeffects:hover {
+        color: black;
+        background-color: blue;
+        width: 100%;
+      }
+
+      #contact {
+
+        width: 100%;
+        height: 170px;
+        margin-top: 350px;
+      }
+
+      #contact h1 {
+        text-align: center;
+      }
+
+      #page {
+        margin-top: 25px;
+
+        height: 100px;
+        background-color: lightpink;
+      }
+
+      #forcontact {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+      }
+
+      #page p {
+        text-align: center;
+        margin-top: 10px;
+
+      }
+
+
+
+    }
+
+    
+  
+  
+  </style>
+</head>
+
+<body>
+  <div id="container">
+    <ul>
+      <li><a href="#">HOME</a></li>
+      <li><a href="#about">ABOUT US</a></li>
+      <li><a href="#team">TEAM</a></li>
+      <li><a href="#TECHNOLOGIES">TECHNOLOGIES</a></li>
+      <li><a href="#contact">CONTACT</a></li>
+    </ul>
+    <div id="back">
+      <h1>PRACTILE-8</h1>
+
+    </div>
+    <div id="team">
+      <h1>TEAM MEMBER</h1>
+      <div id="lpc">
+        <div id="llc"><img src="images/1.png" alt=""> </div>
+        <div id="lrc"><img src="images/2.png" alt=""> </div>
+      </div>
+      <div id="rpc">
+        <div id="rlc"><img src="images/3.png" alt=""> </div>
+        <div id="rrc"><img src="images/9.png" alt=""> </div>
+
+
+
+
+      </div>
+
+
+    </div>
+    <div id="about">
+      <h1>ABOUT US</h1>
+      <div id="lhs">
+        <h2>About project</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+          aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet,
+          consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing
+          elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+          esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+          nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+      <div id="rhs">
+        <div id="Article-1">
+          <h1>Project-1</h1>
+        </div>
+        <div id="Article-2">
+          <h1>Project-2</h1>
+        </div>
+        <div id="Article-3">
+          <h1>Project-3</h1>
+        </div>
+
+      </div>
+    </div>
+    <div id="TECHNOLOGIES">
+      <h1>TECHNOLOGIES USED</h1>
+      <div id="lh">
+        <div id="llh">
+          <img src="images/html.jpg" alt="html image">
+          <h2>introduction to html</h2>
+
+          <p>Lorem ipsum dolor sit amet, consectetur oncus uerdum maximus, augue diam porttitor lorem, et sollicitudin felis neque sit amet erat.</p>
+
+          <a class="specialeffects" href="images/html.jpg">Read more</a>
+        </div>
+        <div id="lrh">
+          <img src="images/css.jpg" alt="html image">
+          <h2>introduction to html</h2>
+
+          <p>Lorem ipsum dolor sit amet, consectetur oncus uerdum maximus, augue diam porttitor lorem, et sollicitudin felis neque sit amet erat.</p>
+
+          <a class="specialeffects" href="images/css.jpg">Read more</a>
+
+
+
+        </div>
+      </div>
+      <div id="rh">
+        <div id="rlh">
+          <img src="images/jss.png" alt="html image">
+          <h2>introduction to html</h2>
+
+          <p>Lorem ipsum dolor sit amet, consectetur oncus uerdum maximus, augue diam porttitor lorem, et sollicitudin felis neque sit amet erat.</p>
+
+          <a class="specialeffects" href="images/jss.png">Read more</a>
+
+        </div>
+        <div id="rrh">
+          <img src="images/bootstrap.jpg" alt="html image">
+          <h2>introduction to html</h2>
+
+          <p>Lorem ipsum dolor sit amet, consectetur oncus uerdum maximus, augue diam porttitor lorem, et sollicitudin felis neque sit amet erat.</p>
+
+          <a class="specialeffects" href="images/bootstrap.jpg">Read more</a>
+
+        </div>
+
+
+
+
+      </div>
+
+
+    </div>
+    <div id="contact">
+      <h1>CONTACT</h1>
+      <div id="page">
+        <p>Website Template forPractical-8 <a href="">Beta-Labs</a>
+
+        </p>
+        <a id="forcontact" href="#">Back to top</a>
+      </div>
+
+    </div>
+  </div>
+</body>
+
+</html>

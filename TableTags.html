@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TableTags</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            background-color: beige;
+        }
+        thead th{
+            background-color: grey;
+            color: white;
+        }
+        tfoot tr{
+            background-color: lightgray !important;
+        }
+        tr:nth-child(even){
+            background-color: white;
+        }
+        tr:nth-child(odd)
+        {
+            background-color: darkseagreen;
+        }
+        table,tr,td,th{
+            border: 1px solid;
+            padding: 20px;
+            text-align: center;
+            
+        }
+        caption{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <caption >List of courses</caption>
+    <colgroup span="2" style="background-color: lightgray;"></colgroup>
+    <table width="1000" align="center" >
+        <thead>
+        <tr>
+            <th>course</th>
+            <th>course duration</th>
+            <th>course cost</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td >web development</td>
+            <td>4 months0</td>
+            <td>Rs. 20000</td>
+        </tr>
+        <tr>
+            <td>Machine learning</td>
+            <td width="100">6 months</td>
+            <td>Rs. 18000</td>
+        </tr>
+        <tr>
+            <td>Data structure</td>
+            <td>5 months</td>
+            <td>Rs. 8000</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="2">total cost</td>
+            <td>RS. 45000</td>
+        </tr>
+    </tfoot>
+    </table>
+</body>
+</html>

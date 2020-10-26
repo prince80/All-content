@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo classess</title>
+    <style>
+        p:nth-child(2n){
+            color: red;
+        }
+        p:empty
+        {
+            width: 200px;
+            background-color: pink;
+        }
+        p:only-child
+        {
+            color: green;
+        }
+        p:first-of-type::first-letter
+        {
+            font-size: 100px;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>this is paragraph</p>
+        <p></p>
+        <p>this is paragraph</p>
+        <p>this is paragraph</p>
+        <div>
+            <p>this is paragraph</p>
+        </div>
+    </div>
+</body>
+</html>

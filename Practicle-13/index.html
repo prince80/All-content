@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practicle 13</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        *
+        {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        main.content
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+            padding: 25px;
+            
+        }
+        
+        footer{
+            width: 100%;
+        
+            background-color: #26272b;
+        }
+        .links3
+        {
+            /* padding: 15px 25px; */
+            /* font-size: 30px; */
+            
+        }
+ 
+        h2{
+            color: white;
+        }
+         .sec-1
+        {
+            width: 100%;
+            height: 200px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+        .sec-1 li
+        {
+            list-style: none;
+        }
+        .about
+        {
+            width: 35%;
+        }
+        .sec-2
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 15px;
+            
+        }
+        .sec-2 a{
+            border-radius: 20px;
+            background-color:red;
+            padding: 8px;
+            margin: 10px;
+            color: white;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        .sec-3 ul li a
+        {
+            text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+           
+            
+        }
+        .sec-3
+        {
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: row;
+            margin: 20px;
+        }
+        .sec-3 li
+        {
+            list-style: none;
+        }
+        .sec-3 i 
+        {
+            font-size:30px;
+           color:grey;
+           background: #2e2f30;
+             padding:30px;
+             border-radius: 50%;
+             margin-right: 5px;
+        
+           
+            
+        }
+        section.sec-4  h5
+        {
+            color:grey;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top:25px;
+            
+        }
+        section.sec-4 article h5::before,h5::after
+       {
+          content: '';
+         display: block;
+         width: 0px;
+         height: 3px;
+         background-color: yellow;
+         position: absolute;
+         transition: all 0.3s;
+       }
+        .sec-4
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* margin: 20px; */
+            background-color: rgba(22, 21, 21, 0.973);
+            height: 50px;
+        }
+        h5
+        {
+            color: white;
+            font-size: 15px;
+        }
+        section.sec-4  h5::before,h5::after
+       {
+          content: '';
+         display: block;
+         width: 0px;
+         height: 3px;
+         background-color: yellow;
+         position: absolute;
+         transition: all 0.3s;
+       }
+        h5::before
+       {
+           left: 0px;
+           top: -10px;
+       }
+       h5::after
+       {
+           right: 590px;
+           bottom: -10px;
+       }
+       h5:hover::before,
+       h5:hover::after
+       {
+           width: 22%;
+       }
+
+      li:hover
+      {
+          color: orangered;
+      } 
+       
+            
+        
+    </style>
+</head>
+<body>
+    <main class="content">
+    <section>content area</section>
+    </main>
+    <footer>
+        
+        <section class="sec-1">
+        <section class="about">
+            <h2>about</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere illum quam debitis ut fugit, rem natus corporis excepturi iste sunt consequatur culpa tempora nostrum quisquam distinctio perferendis iure expedita ex odio quos sit corrupti repellat a voluptatibus. At laborum mollitia fugit, ullam amet odit. Aut exercitationem cum placeat voluptatibus quis?</p>
+
+        </section>
+        <section class="links1">
+            <h2>
+                categories
+                </h2>
+                <ul>
+                    <li><a href="#"></a>C</li>
+                    <li><a href="#"></a>UI Design</li>
+                    <li><a href="#"></a>PHP</li>
+                    <li><a href="#"></a>Java</li>
+                    <li><a href="#"></a>Android</li>
+                    <li><a href="#"></a>TEMPLATE</li>
+                    
+                </ul>
+        </section>
+        
+        <section class="links2">
+            <h2>Quicklinks</h2>
+            <ul>
+                <li><a href="#"></a>About us</li>
+                <li><a href="#"></a>Contact us</li>
+                <li><a href="#"></a>Contribute</li>
+                <li><a href="#"></a>Java</li>
+                <li><a href="#"></a>Privacy policy</li>
+                <li><a href="#"></a>sitemap</li>
+                
+            </ul>
+        </section>
+        <section class="links3">
+            <h2>Contacts</h2>
+            <ul>
+                <li>   <i class="fa fa-home" aria-hidden="true"></i>gopal pura shamsabad</li>
+                <li> <i class="fa fa-envelope"><span></span></i>rathoreprince@786outlook.com</li>
+                <li> <i class="fa fa-mobile"><span></span></i>8755170639</li>
+                <li> <i class="fa fa-facebook-square"><span></span></i>prince rathore</li>
+               
+                
+            </ul>
+        </section>
+        </section>
+        <hr width="100%">
+        <section class="sec-2">
+           <h2>Register for Free </h2>
+           <a href="#">Signup!</a> 
+        </section>
+        <hr>
+        <section class="sec-3">
+            <ul>
+                <i class="fa fa-facebook fb" aria-hidden="true"></i>
+                <i class="fa fa-twitter twit" aria-hidden="true"></i>
+                <i class="fa fa-google goo" aria-hidden="true"></i>
+                <i class="fa fa-linkedin linked" aria-hidden="true"></i>
+                <i class="fa fa-chrome cho" aria-hidden="true"></i>
+                
+            </ul>
+        </section>
+        <hr>
+        <section class="sec-4">
+            <h5>Copyright @ 2020 All Rights Reserved by Beta-Labs.</h5>
+           
+        </section>
+    </footer>
+</body>
+</html>

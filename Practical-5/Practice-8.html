@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice-8</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        ul{
+            list-style: none;
+            background-color: lightgrey;
+            display: flex;
+            justify-content: space-evenly;
+            margin-bottom:  20px;
+            width: 100%;
+        }
+        ul li{
+            display: inline-block;
+
+        }
+        ul li a{
+            text-decoration: none;
+            padding: 15px 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+            font-weight: bold;
+            display: block;
+            text-align: center;
+            text-transform: uppercase;
+            width: 100%;
+        }
+        #container{
+            background-color: white;
+        }
+        #banner{
+            width: 100%;
+            height: 600px;
+            /* background-color: blueviolet; */
+            position: relative;
+            margin-bottom: 20px;
+        }
+        #banner h1{
+            position: absolute;
+            top: 40px;
+            left: 40px;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            
+        }
+        #banner img{
+            width: 100%;
+            height: 600px;
+            
+        }
+        h1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-transform: uppercase;
+
+        }
+        
+        #team{
+            width: 100%;
+            height: 300px;
+            margin: 20px;
+        }
+        #lc{
+            width: 48%;
+            height: 300px;
+            float: left;
+        }
+        #rc{
+            width: 48%;
+            height: 300px;
+            float: right;
+        }
+        #llc img{
+            border-radius: 50%;
+            height: 300px;
+            width: 45%;
+            /* height: 400px; */
+            float: left;
+            
+        }
+        #rlc img{
+            border-radius: 50%;
+            height: 300px;
+            width: 45%;
+            /* height: 300px; */
+            float: left;
+        }
+        #lrc img{
+            border-radius: 50%;
+            height: 300px;
+            width: 45%;
+            /* height: 300px; */
+            float: right;
+        }
+        #rrc img{
+            border-radius: 50%; 
+            height: 300px;
+            width: 45%;
+            /* height: 400px; */
+            float: right;
+        }
+        #about{
+            margin-bottom: 60px;
+            height: 510px;
+        }
+        #ls{
+            width: 49%;
+            height: 510px;
+            float: left;
+            background-color: grey;
+        }
+        #rs{
+            width: 49%;
+            height: 510px;
+            float: right;
+            /* background-color: pink; */
+        }
+        #a1{
+            width: 100%;
+            height: 150px;
+            margin-bottom: 25px;
+            position: relative;
+        }
+        #a1 img{
+            width: 100%;
+            height: 150px;
+            position: relative;
+            z-index: 1;
+            
+            
+        }
+        #a2{
+            width: 100%;
+            height: 150px;
+            margin-bottom: 25px;
+            position: relative;
+        }
+        #a2 img{
+            width: 100%;
+            height: 150px;
+            position: relative;
+            z-index: 1;
+            
+            
+        }
+        #a3{
+            width: 100%;
+            height: 150px;
+            position: relative;
+        }
+        #a3 img{
+            width: 100%;
+            height: 150px;
+            position: relative;
+            z-index: 1;
+            
+        }
+        h2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 5px;
+            right: 40%;
+            z-index: 2;
+        
+            
+        }
+        #ls p{
+            color: white;
+        }
+        #ls h3{
+            color: white;
+        }
+       #les{
+           width: 48%;
+           height: 400px;
+           float: left;
+       }
+       #res{
+           width: 48%;
+           height: 400px;
+           float: right;
+       }
+       
+       #lles{
+           width: 45%;
+           height: 400px;
+           float: left;
+           border-radius: 10px;
+           
+       }
+       #lres{
+           width: 45%;
+           height: 400px;
+           float: right;
+           border-radius: 10px;
+       }
+       #rles{
+           width: 45%;
+           height: 400px;
+           float: left;
+           border-radius: 10px;
+       }
+       #rres{
+           width: 45%;
+           height: 400px;
+           float: right;
+           border-radius: 10px;
+       }
+       #lles img{
+           width: 100%;
+           height: 150;
+           border-radius: 10px;
+        
+       }
+       
+       #lres img{
+           width: 100%;
+           height: 150;
+           border-radius: 10px;
+       }
+     
+       #rles img{
+           width: 100%;
+           height: 130;
+           border-radius: 10px;
+       }
+      
+       #rles img{
+           width: 100%;
+           height: 130;
+           border-radius: 10px;
+       }
+     
+       #rres img{
+           width: 100%;
+           height: 150;
+           border-radius: 10px;
+       }
+       
+       #a11{
+            background-color: #D43131;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 30px;
+        }
+       
+       a.specialeffects:hover {
+       color:pink ;
+       background-color: blue;
+       }
+       #techno > h1 {
+         
+           margin-bottom: 20px;
+
+       }
+       @media(min-width: 1200px)
+       {
+        ul{
+            list-style: none;
+            background-color: lightgrey;
+            display: flex;
+            justify-content: space-evenly;
+            margin-bottom:  20px;
+            width: 100%;
+        }
+        ul li{
+            display: inline-block;
+
+        }
+        ul li a{
+            text-decoration: none;
+            padding: 15px 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+            font-weight: bold;
+            display: block;
+            text-align: center;
+            text-transform: uppercase;
+            width: 100%;
+        }
+        #container{
+            background-color: white;
+        }
+        #banner{
+            width: 100%;
+            height: 600px;
+            /* background-color: blueviolet; */
+            position: relative;
+            margin-bottom: 20px;
+        }
+        #banner h1{
+            position: absolute;
+            top: 40px;
+            left: 40px;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            
+        }
+        #banner img{
+            width: 100%;
+            height: 600px;
+            
+        }
+        h1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-transform: uppercase;
+
+        }
+        
+        #team{
+            width: 100%;
+            height: 300px;
+            margin: 20px;
+        }
+        #lc{
+            width: 48%;
+            height: 300px;
+            float: left;
+        }
+        #rc{
+            width: 48%;
+            height: 300px;
+            float: right;
+        }
+        #llc img{
+            border-radius: 50%;
+            height: 300px;
+            width: 45%;
+            /* height: 400px; */
+            float: left;
+            
+        }
+        #rlc img{
+            border-radius: 50%;
+            height: 300px;
+            width: 45%;
+            /* height: 300px; */
+            float: left;
+        }
+        #lrc img{
+            border-radius: 50%;
+            height: 300px;
+            width: 45%;
+            /* height: 300px; */
+            float: right;
+        }
+        #rrc img{
+            border-radius: 50%; 
+            height: 300px;
+            width: 45%;
+            /* height: 400px; */
+            float: right;
+        }
+        #about{
+            margin-bottom: 60px;
+            height: 510px;
+        }
+        #ls{
+            width: 49%;
+            height: 510px;
+            float: left;
+            background-color: grey;
+        }
+        #rs{
+            width: 49%;
+            height: 510px;
+            float: right;
+            /* background-color: pink; */
+        }
+        #a1{
+            width: 100%;
+            height: 150px;
+            margin-bottom: 25px;
+            position: relative;
+        }
+        #a1 img{
+            width: 100%;
+            height: 150px;
+            position: relative;
+            z-index: 1;
+            
+            
+        }
+        #a2{
+            width: 100%;
+            height: 150px;
+            margin-bottom: 25px;
+            position: relative;
+        }
+        #a2 img{
+            width: 100%;
+            height: 150px;
+            position: relative;
+            z-index: 1;
+            
+            
+        }
+        #a3{
+            width: 100%;
+            height: 150px;
+            position: relative;
+        }
+        #a3 img{
+            width: 100%;
+            height: 150px;
+            position: relative;
+            z-index: 1;
+            
+        }
+        h2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 5px;
+            right: 40%;
+            z-index: 2;
+        
+            
+        }
+        #ls p{
+            color: white;
+        }
+        #ls h3{
+            color: white;
+        }
+       #les{
+           width: 48%;
+           height: 400px;
+           float: left;
+       }
+       #res{
+           width: 48%;
+           height: 400px;
+           float: right;
+       }
+       
+       #lles{
+           width: 45%;
+           height: 400px;
+           float: left;
+           border-radius: 10px;
+           
+       }
+       #lres{
+           width: 45%;
+           height: 400px;
+           float: right;
+           border-radius: 10px;
+       }
+       #rles{
+           width: 45%;
+           height: 400px;
+           float: left;
+           border-radius: 10px;
+       }
+       #rres{
+           width: 45%;
+           height: 400px;
+           float: right;
+           border-radius: 10px;
+       }
+       #lles img{
+           width: 100%;
+           height: 150;
+           border-radius: 10px;
+        
+       }
+       
+       #lres img{
+           width: 100%;
+           height: 150;
+           border-radius: 10px;
+       }
+     
+       #rles img{
+           width: 100%;
+           height: 130;
+           border-radius: 10px;
+       }
+      
+       #rles img{
+           width: 100%;
+           height: 130;
+           border-radius: 10px;
+       }
+     
+       #rres img{
+           width: 100%;
+           height: 150;
+           border-radius: 10px;
+       }
+       
+       #a11{
+            background-color: #D43131;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 30px;
+        }
+       
+       a.specialeffects:hover {
+       color:pink ;
+       background-color: blue;
+       }
+       #techno > h1 {
+         
+           margin-bottom: 20px;
+
+       }  
+       }
+       @media(min-width: 800px) and (max-width: 1200px)
+       {
+        ul li a{
+            text-decoration: none;
+            padding: 15px 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+            font-weight: bold;
+            display: block;
+            text-align: center;
+            text-transform: uppercase;
+            width: 100%;
+        }
+       }
+       /* #contact{ */
+           /* border: 2px solid yellow; */
+           /* background-color: palevioletred; */
+           /* width: 100%; */
+           /* height: 200px; */
+
+       /* } */
+       /* #cs{ */
+           /* width: 50%; */
+           /* height: 200px; */
+           /* background-color: palevioletred; */
+
+       /* } */
+       /* #cr{ */
+           /* width: 50%; */
+           /* height: 200px; */
+           /* background-color: palevioletred; */
+
+       /* } */
+
+      #contact{
+          background-color: #D43131;
+          height: 70px;
+          width: 100%;
+      }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#">home</a></li>
+        <li><a href="#about">about</a></li>
+        <li><a href="#team">team</a></li>
+        <li><a href="#techno">tecnologies</a></li>
+        <li><a href="#contact">contact</a></li>
+    </ul>
+    <div id="container">
+        <div id="banner">
+            <h1>Practical-8</h1>
+            <div><img src="img/imagetag.png" alt=""></div>
+        </div>
+        <h1 >team</h1>
+        <div id="team">
+            <div id="lc">
+                <div id="llc">
+                    <div><img src="img/face1.jpg" alt=""></div>
+                </div>
+                <div id="lrc">
+                    <div><img src="img/face2.jpg" alt=""></div>
+                </div>
+            </div>
+            <div id="rc">
+                <div id="rlc">
+                    <div><img src="img/face3.jpg" alt=""></div>
+                </div>
+                <div id="rrc">
+                    <div><img src="img/face4.jpg" alt=""></div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="about">
+            <h1>about us</h1>
+            <div id="ls">
+                <h3>About us</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima quidem nobis vel cum ut deleniti, soluta repellendus corrupti laudantium debitis suscipit distinctio repellat maxime sit delectus dolores. Architecto, ex eaque voluptatem dolore minus distinctio eum. Odio accusamus tempora, cum nisi autem quibusdam harum officiis nulla eos est in magnam sint, amet fuga eius labore iure eveniet earum consequatur quidem veniam voluptates? Eaque voluptate, quibusdam eveniet ad, blanditiis expedita facilis nam a recusandae illo magnam aperiam earum quas neque odio omnis doloremque doloribus provident incidunt explicabo veritatis. Repellat sequi fuga reprehenderit veritatis at temporibus rerum doloremque! Natus, numquam quibusdam? Quaerat harum nam nihil velit voluptas enim rerum alias voluptatum obcaecati quasi provident blanditiis sapiente totam repellat ducimus a dignissimos eos exercitationem pariatur nisi, voluptates impedit, recusandae vero perferendis. Voluptates dignissimos tenetur quam dolor libero debitis dolorum harum eum eveniet nam eligendi totam officiis tempora, corporis ratione reiciendis quia consequuntur! Quo sunt commodi dolor deleniti voluptatem tenetur hic magnam perspiciatis dolore obcaecati quibusdam explicabo, quam facere nulla iure nam voluptates repudiandae facilis quasi. Voluptates consequatur autem dolore, vitae deleniti distinctio exercitationem ratione nulla. Natus mollitia officia sequi expedita ducimus iure quam? Sapiente quidem tempora enim neque nulla voluptas quasi, ipsum minima eum explicabo et sit doloribus quisquam a velit? Voluptatum aliquid architecto animi praesentium mollitia explicabo quasi et fugit cum omnis. Corporis temporibus porro illum sapiente atque aperiam mollitia, autem consequatur placeat asperiores voluptas et natus, modi hic voluptatum quasi. Labore, iure voluptate exercitationem fugiat harum repellendus cupiditate quidem architecto aperiam sapiente a saepe deleniti sequi consequatur ipsum blanditiis ducimus ut alias ea molestias voluptatum placeat soluta? Ex ipsum cumque incidunt officia modi earum nobis dignissimos provident suscipit accusantium consequuntur rerum, at qui reprehenderit ratione. Nesciunt quod odit quidem et neque, ratione, consectetur tempore dignissimos animi nisi suscipit architecto quasi cumque error corporis culpa dolore a sequi facere est. Veritatis explicabo quis modi voluptatum molestiae nihil numquam cumque quaerat, eius labore quam ipsum dolorum atque quos ratione dolorem necessitatibus? Et temporibus magnam nulla sequi dolorum recusandae sed dignissimos, assumenda quod. Error dolorem voluptatibus eum. Magni exercitationem labore neque corporis laudantium beatae. Magnam, earum dolore? Error reiciendis cumque assumenda vero voluptate minima ab repellat corporis, at eveniet quasi dolorum unde voluptatibus officiis. Eos, quaerat! Aliquid recusandae sint quidem </p>
+            </div>
+            <div id="rs">
+                <div id="a1">
+                    <h2>project-1</h2>
+                    <div><img src="img/p1.jpg" alt="">
+                    </div>
+                </div>
+                <div id="a2">
+                    <h2>project-2</h2>
+                    <div><img src="img/p2.jpeg" alt="">
+                        
+                    </div>
+                </div>
+                <div id="a3">
+                    <h2>project-3</h2>
+                    <div><img src="img/p3.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+        <div id="techno">
+            <h1>technologies</h1>
+            <div id="les">
+                <div id="lles">
+                    <div><img src="https://d2sis3lil8ndrq.cloudfront.net/courses/2897.png" alt=""></div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae explicabo recusandae debitis dignissimos, nihil laboriosam a iusto dolor nostrum nobis sit eaque deserunt in hic quis ex provident numquam, amet iste exercitationem! Ratione, mollitia dolor numquam atque vitae rem </p>
+                    <div id="a11"><a a class="specialeffects"  href="HTML.html">readmore</a></div>
+                </div>
+                <div id="lres">
+                    <div><img src="https://bcisnotes.com/wp-content/uploads/2020/01/introduction.jpg" alt=""></div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae explicabo recusandae debitis dignissimos, nihil laboriosam a iusto dolor nostrum nobis sit eaque deserunt in hic quis ex provident numquam, amet iste exercitationem! Ratione, mollitia dolor numquam atque vitae rem </p>
+                    <div id="a11" ><a class="specialeffects" href="CSS.html">read more</a></div>
+                </div>
+                </div>
+            </div>
+            <div id="res">
+                <div id="rles">
+                    <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSLpis1lATR65EGw5HPDfof0zWOVRyDyvJawA&usqp=CAU" alt=""></div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae explicabo recusandae debitis dignissimos, nihil laboriosam a iusto dolor nostrum nobis sit eaque deserunt in hic quis ex  </p>
+                    <div id="a11"><a class="specialeffects" href="JavaScript.html">readmore</a></div>
+                </div>
+                <div id="rres">
+                    <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQPU_PLo6y204EVKGvy0jNQAilypXuNi7J6ug&usqp=CAU" alt=""></div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae explicabo recusandae debitis dignissimos, nihil laboriosam a iusto dolor   </p>
+                    <div id="a11" ><a class="specialeffects" href="bootstrap.html">read more</a></div>
+                </div>
+            </div>
+        </div>
+    
+     <!-- <h1>contacts</h1> -->
+    
+
+    
+</body>
+</html>
